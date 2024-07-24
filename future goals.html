@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Future Goals for Developer Resume</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            background: #e7e7e7;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .home-link {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #007bff;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .home-link:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Future Goals</h1>
+        <ul id="goals-list">
+            <!-- JavaScript will populate this list -->
+        </ul>
+        
+                <a href="http://127.0.0.1:5500/portfolio.html" class="home-link">Home</a>
+    </div>
+    <script>
+        const goals = [
+            "Master New Languages: Achieve proficiency in specific programming languages within a set timeframe.",
+            "Open Source Contributions: Contribute to significant open-source projects annually.",
+            "Certifications: Earn relevant certifications like AWS Certified Developer or Google Cloud Professional Developer.",
+            "Leadership Skills: Develop leadership and project management skills through team projects and mentorship.",
+            "Domain Expertise: Become an expert in a specific domain such as AI, machine learning, or cybersecurity.",
+            "Code Quality: Focus on code optimization and refactoring to ensure high-quality, efficient code.",
+            "Continuous Learning: Attend workshops, webinars, and conferences to stay updated with industry trends.",
+            "Personal Projects: Complete personal projects to build a robust portfolio.",
+            "Soft Skills: Improve communication and collaboration skills through team-building activities.",
+            "Mentoring: Mentor junior developers to share knowledge and foster a collaborative learning environment."
+        ];
+
+        const goalsList = document.getElementById('goals-list');
+
+        goals.forEach(goal => {
+            const listItem = document.createElement('li');
+            listItem.textContent = goal;
+            goalsList.appendChild(listItem);
+        });
+
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
